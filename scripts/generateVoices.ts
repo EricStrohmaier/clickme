@@ -13,7 +13,7 @@ const VOICE_IDS = {
 
 async function generateVoiceFile(text: string, voiceId: string, outputPath: string) {
   if (!ELEVEN_LABS_API_KEY) {
-    throw new Error('ELEVEN_LABS_API_KEY environment variable is required');
+    throw new Error('ELEVEN_LABS_API_KEY environment variable is required!');
   }
 
   const voice = new Voice(ELEVEN_LABS_API_KEY);
